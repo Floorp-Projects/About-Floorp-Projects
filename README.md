@@ -35,7 +35,7 @@ Floorp Projects への貢献者と利用したオープンソースソフトウ�
 
 💿 <strong><a href="https://floorp.ablaze.one">公式サイト</a></strong>
 
-💻 <strong><a href="https://https://github.com/Floorp-Projects/Floorp-legacy-dev">ブラウザーのソースコード</a></strong>
+💻 <strong><a href="https://github.com/Floorp-Projects/Floorp-legacy-dev">ブラウザーのソースコード</a></strong>
 
 📘 <strong><a href="https://blog.ablaze.one">リリースノート ＆ ブログ</a></strong>
 
