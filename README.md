@@ -10,7 +10,7 @@
 Floorp ブラウザーは、Firefox ベースですが、Chromium ベースのようなUI、機能など、Firefox とは全く違う体験をお届けします。
 <br>
 
-Floorp Projects への貢献者と利用したオープンソースソフトウェアは、<a href="hhttps://github.com/Floorp-Projects/About-Floorp-Projects/blob/main/Contributeder%26SoftwareContribute.md">AMO</a> から確認してください。
+Floorp Projects への貢献者と利用したオープンソースソフトウェアは、<a href="https://github.com/Floorp-Projects/About-Floorp-Projects/blob/main/Contributeder%26SoftwareContribute.md">こちら</a> から確認してください。
 
 ---
 ### 🔨 プロジェクト
