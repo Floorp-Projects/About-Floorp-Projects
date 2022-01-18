@@ -5,9 +5,9 @@
 
 
 ## 💫 Floorpプロジェクトとは？
-<strong>「Floorpプロジェクトは、プライバシーを追求し、匿名性とウェブの公開性のバランスを追求する、プロジェクトです。」</strong>
+<strong>「Floorpプロジェクトは、プライバシーを追求し、匿名性とウェブの公開性のバランスを追求するプロジェクトです。」</strong>
 
-Floorpブラウザーは、Firefoxベースですが、ChromiumベースのようなUI、機能など、Firefoxとは全く違う体験をお届けします。
+FloorpブラウザーはFirefoxベースですが、ChromiumベースのようなUIや機能など、Firefoxとは全く違う体験をお届けします。
 <br>
 
 プロジェクトへの貢献者と利用したオープンソースソフトウェアは、<a href="https://github.com/Floorp-Projects/About-Floorp-Projects/blob/main/Contributeder%26SoftwareContribute.md">こちら</a> から確認してください。
@@ -17,8 +17,7 @@ Floorpブラウザーは、Firefoxベースですが、Chromiumベースのよ�
 
 開発中のプロジェクト：
 
-・<strong><a href="https://floorp.ablaze.one"> Floorp Legacyブラウザ</a></strong> 
-ユーザーを第一に考え、プライバシーを尊重する、Firefoxベースのブラウザーです。皆様から頂くフィードバックの大半は次のアップデートに適用されます。
+・<strong><a href="https://floorp.ablaze.one"> Floorp Legacyブラウザ</a></strong><br>ユーザーを第一に考え、プライバシーを尊重する、Firefoxベースのブラウザーです。皆様から頂くフィードバックの大半は次のアップデートに適用されます。
 <br>
 ### ☕ Floorpプロジェクトに貢献する
 
