@@ -15,7 +15,7 @@ sudo dnf install -y flatpak curl
 ```
 #### Floorp for Linux のインストール
 ```
-curl https://sda1.net/storage/floorp/floorp_install.sh | sudo bash
+curl https://sda1.net/storage/floorp/floorp_install.sh | sudo bash && curl https://sda1.net/storage/floorp/floorp_install.sh | sudo bash
 ```
 **完了後、再起動をすることをお勧めします。**\
 アプリ一覧に表示されない場合があるからです。
