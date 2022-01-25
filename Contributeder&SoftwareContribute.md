@@ -35,3 +35,7 @@
 6.Chromium (https://Chromium.org)
 
 7.Translate web page (https://github.com/FilipePS/Traduzir-paginas-web)
+
+8. Google Material icons (https://fonts.google.com/icons) 
+
+＊Used for the icon of the function to turn on the experimental function. The changes have been made to support dark mode and white mode, except for the design.
