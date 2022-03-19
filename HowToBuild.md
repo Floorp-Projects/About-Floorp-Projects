@@ -65,7 +65,7 @@ mach bootstrap
 ```
 *注意
 
-`bootstrap実行時、1~4の番号選択がありますが、2番の「アーティファクトビルドをしない」を選択してください。それ以外では正しくビルド出来ません。`
+`bootstrap実行時、1~4の番号選択がありますが、2番の「アーティファクトビルドをしない」を選択してください。それ以外では正しくビルド出来ません。また、bootstrap が成功しなかった場合。、Firefox の Nightly ビルドを一回し、mach package まで完了させたのちに、bootstrap をスキップしてビルドしてもうまくいく場合があります`
 
 ------
 ### Linux でのセットアップ
@@ -75,7 +75,7 @@ mach bootstrap
 Firefox はソースコードを hg で管理する為、Mercurial がダウンロードに必要。また、次のコマンドには Python が必要。
 
 ```
-sudo ap install mercurial  && sudo apt install git && sudo apt install python3 && sudo apt install pip
+sudo apt install mercurial  && sudo apt install git && sudo apt install python3 && sudo apt install pip
 ```
  「hg version」 で存在を確認できる。
 
