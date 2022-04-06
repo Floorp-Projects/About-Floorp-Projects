@@ -55,7 +55,7 @@ Firefox のサーバからソースコードをダウンロードする C: を�
 cd c:/
 mkdir floorp
 cd floorp
-git clone https://github.com/Floorp-Projects/Floorp-legacy-dev.git
+git clone https://github.com/Floorp-Projects/Floorp-dev.git
 
 完了後
 
@@ -84,7 +84,7 @@ sudo apt install mercurial  && sudo apt install git && sudo apt install python3 
 ```
 mkdir floorp
 cd floorp
-git clone https://github.com/Floorp-Projects/Floorp-legacy-dev.git
+git clone https://github.com/Floorp-Projects/Floorp-dev.git
 
 完了後
 
