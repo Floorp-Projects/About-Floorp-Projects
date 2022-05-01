@@ -75,7 +75,7 @@ mach bootstrap
 Firefox はソースコードを hg で管理する為、Mercurial がダウンロードに必要。また、次のコマンドには Python が必要。
 
 ```
-sudo apt install mercurial  && sudo apt install git && sudo apt install python3 && sudo apt install pip
+sudo apt install mercurial git python3 pip
 ```
  「hg version」 で存在を確認できる。
 
