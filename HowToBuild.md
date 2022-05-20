@@ -152,7 +152,7 @@ AB_CD=multi ./mach package
 git clone https://github.com/floorp-projects/floorp.git
 ```
 
-その後、ブランチが`beta`であることを確認してください。`release` や `master` は使用しません。
+その後、ブランチが`beta`であることを確認してください。`release` は使用しません。
 
 ```
 git branch
@@ -160,7 +160,7 @@ git branch
 
 Floorp のソースコードを改造しましょう！以下は Floorp のソースコード形態についてのドキュメントです。
 
-Floorp はアドオン・UI 部分・アドオンの実装部分・その他の Firefox の実装部分を改造して作成されています。改変場所についての解説です。ちなみに Firefox はよくソースコードの構造変えたがるのであてにならない場合あることに注意。
+Floorp はアドオン・UI 部分・アドオンの実装部分・その他の Firefox の実装部分を改造して作成されています。改変場所についての解説です。また、 Firefox はよくソースコードの構造変えたがるのであてにならない場合あることに注意。
 
 ```
 
