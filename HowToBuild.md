@@ -1,145 +1,188 @@
-# Firefox ベースの Floorp のビルド方法
+# Floorp ブラウザードキュメント
 
-## 前提条件
-----
+---
+## Floorp のリポジトリ構造について
 
-### OS オペレーティングシステム ハードウェア要件
+### 一般公開用リポジトリについて
 
-・Windows11 or Windows 10
-
-・Ubuntu (20.04 推奨)
-
-・macOS X
+公開用リポジトリは三つの種類があります
 
 
-メモリ： 最小4GB RAM、8GB以上を推奨。
+1.　 <a href="https://github.com/floorp-projects/floorp-dev">Floorp-dev</a>：Floorp の一般公衆公開用の Firefox のフォークリポジトリ
 
-ディスク ： 容量 少なくとも40GBの空きディスク容量。
+2.　 <a href="https://github.com/floorp-projects/Floorp-l10-central"> Floorp-l10-central</a>：Floorp の多言語化をするためのリポジトリ。ただし、例外として`en-US`は含まれていません
 
-----
-### Windows でのセットアップ
+3.　 その他のソースコードが含まれるリポジトリ。ツール等
 
-・Visual Studio 2019 または Visual Studio 2022 ビルドツール
-##### 要求されるコンポーネント Visual Studio 2019 の場合
- ` C ++を使用したデスクトップ開発。`
+---
 
- ` C ++によるゲーム開発。`
- 
-` Windows 10 SDK（最新版）`
+重要なのは上の二つです。Floorp-dev は開発者の作業用のリポジトリであり、Floorp 開発者も実際にパッチ作成のために使用します。以下では、<a href="https://github.com/floorp-projects/floorp-dev">Floorp-dev</a> のリポジトリ・ブランチについて解説します。
 
-`v142ビルドツール（x86およびx64）用のC ++ ATL`
+`Floorp-dev` には3つ（4つ）のブランチがあります。```master```・```release```・```beta```が存在しています。
 
-##### 要求されるコンポーネント Visual Studio 2022 ビルドツールの場合
+Linux 版の作成のために一時的に作成されたブランチが含まれることがあります。デフォルトは```beta```に現在なっています
 
-` C ++を使用したデスクトップ開発`
+---
 
- ` Windows 10 SDK（少なくとも 10.0.19041.0 ）`
- 
-`  v143ビルドツール（x86、x64）用のC ++ ATL`
+```master``` は Firefox でいう Nighly のバージョンであり、Floorp 開発者が今後提供する機能のイメージ構想に使用します。その為、全てのソースコードが```release```に降ってくる訳ではありません。
+
+```beta``` は Floorp の次回リリースされる予定のバージョンです。Firefox のバージョンは Beta・aurora であり、実際にリリースされるコードが含まれていますが、全ての機能が```release``` に適用されるとは限りません。
+
+```release``` は現在リリースされているブラウザーのソースコードであり、Firefox の安定版と同じバージョンです。
+
+---
+
+## Floorp の日本語版・グローバル版を作成する
+
+<strong>重要：最初に、Firefox Nightly のソースコードをビルドし、インストーラー化までをする必要があります。これにより、ビルド環境を整えます。</strong>
+
+Firefox の Windows のビルド方法（英語）：https://firefox-source-docs.mozilla.org/setup/index.html をご覧ください。`./mach run` が終わったら、`./mach package` を実行する必要があります。
+
+---
+
+Floorp の一般公開用ドキュメントには、英語のインストーラー化までのみ書いています。ここでは、日本語版・多言語化の解説が追加されています。ビルドしたいバージョンに合わせてブランチ等を変更してください。
 
 
-・Mozilla Build
+1.　まず最初に、<a href="https://github.com/floorp-projects/floorp">Floorp</a> をクローンし、ソースコードを `bootsrap` します。ターミナルは Mozilla Build Shell を使用してください。
 
-Windows 向けのビルドツールをダウンロードする
+```
+git clone https://github.com/floorp-projects/floorp.git
 
-https://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/MozillaBuildSetup-Latest.exe
-
-C:\mozilla-build\start-shell.bat からビルド用のターミナルを起動する。Linuxの最低限のコマンドが実装されている(rmなど)。終わったら、ソースコードのセットアップへ。
-
--------
-### Windows でのソースコードのセットアップ
-
-Firefox のサーバからソースコードをダウンロードする C: を使っているがどこでもいい。後、ターミナルは絶対mozbuildダーミナル
-
-``` 
-cd c:/
-mkdir floorp
 cd floorp
-git clone https://github.com/Floorp-Projects/Floorp-dev.git
 
-完了後
-
-cd floorp-legacy-dev
-
-mach bootstrap
-```
-*注意
-
-`bootstrap実行時、1~4の番号選択がありますが、2番の「アーティファクトビルドをしない」を選択してください。それ以外では正しくビルド出来ません。また、bootstrap が成功しなかった場合。、Firefox の Nightly ビルドを一回し、mach package まで完了させたのちに、bootstrap をスキップしてビルドしてもうまくいく場合があります`
-
-------
-### Linux でのセットアップ
-
-・ Mercurial
-
-Firefox はソースコードを hg で管理する為、Mercurial がダウンロードに必要。また、次のコマンドには Python が必要。
+./mach bootstrap
 
 ```
-sudo apt install mercurial git python3 pip
-```
- 「hg version」 で存在を確認できる。
+Floorp ではアーティファクトビルドは使用しません。常にテストではない限り、`2` を選択するべきです。その他の選択はすべて n(No) を選択してください。
 
-以下のコマンドで  FLoorp のソースコードをダウンロード出来る。
+その後、`mozconfig`ファイルをソースコードの一番のディレクトリに追加します。`mozconfig` は Firefox のビルド設定を決める設定ファイルです。作成後、中身に OS に合わせて以下を書き込みます。
+```
+Windows の場合
+
+ac_add_options --with-branding=browser/branding/official
+ac_add_options --with-l10n-base={Floorp の l10n-Central のディレクトリ}
+ac_add_options --disable-maintenance-service
+ac_add_options --disable-crashreporter
+ac_add_options --disable-update-agent
+ac_add_options --disable-updater
+ac_add_options --enable-bootstrap
+ac_add_options --disable-tests
+ac_add_options --disable-debug
+ac_add_options --disable-verify-mar
+ac_add_options --enable-optimize="-O2"
+ac_add_options --enable-proxy-bypass-protection
+ac_add_options --with-google-safebrowsing-api-keyfile={Floorp 用の Google API のディレクトリ}
+MOZ_REQUIRE_SIGNING=
+MOZ_TELEMETRY_REPORTING=
+MOZ_DATA_REPORTING=
+
+Linux の場合、
+
+ac_add_options --with-branding=browser/branding/official
+ac_add_options --with-l10n-base={Floorp の l10n-Central のディレクトリ}
+ac_add_options --disable-crashreporter
+ac_add_options --enable-bootstrap
+ac_add_options --disable-tests
+ac_add_options --disable-debug
+ac_add_options --disable-verify-mar
+ac_add_options --enable-optimize="-O2"
+ac_add_options --enable-proxy-bypass-protection
+ac_add_options --with-google-safebrowsing-api-keyfile={Floorp 用の Google API のディレクトリ}
+MOZ_REQUIRE_SIGNING=
+MOZ_DATA_REPORTING=
 
 ```
-mkdir floorp
+
+これを書き込んだら、ビルド・テストを実行します。ビルドをする前にウイルス対策アプリの除外リストに Floorp のソースコードのディレクトリと `C:\mozilla-build\` を追加します。
+
+```
 cd floorp
-git clone https://github.com/Floorp-Projects/Floorp-dev.git
 
-完了後
+./mach build
 
-cd floorp-legacy-dev
-
-mach bootstrap
+./mach run
 
 ```
-*注意
+### インストーラー化
 
-`bootstrap実行時、1~4の番号選択がありますが、2番の「アーティファクトビルドをしない」を選択してください。それ以外では正しくビルド出来ません。`
+テストを実行して問題が無い場合、インストーラー化しましょう！！
 
-終わったら、Floorp のソースコードを統合するに進んでください。
 
-----
-
-### Floorp のビルド
-
-ビルド
 ```
-cd c:/floorp/mozilla-beta/     //ソースコードのディレクトリに入る//
-./mach build   　　　　　　　　　　　　　　// ビルドには約100分かかります。//
+cd floorp-dev
+
+英語版インストーラー作成・インストーラー化
+
+./mach package  または ./mach build installers-en-US
+
+
+日本語版インストーラー作成
+
+./mach build installers-ja
+
+
+多言語化
+
+export MOZ_CHROME_MULTILOCALE="ar cs da de el en-GB en-US es-ES es-MX fr hu id it ja ko lt nl nn-NO pl pt-BR pt-PT ru sv-SE th vi zh-CN zh-TW"
+
+AB_CD=multi ./mach package
+
 ```
-ビルド完了後 Floorp を実行する
+
+日本語版をビルドすると、再度、`./mach build` した場合の時のみ、`./mach run ` した時インターフェースの文字が消失します。以下の方法で復元可能です。
+
 ```
-//ソースコードのディレクトリに入る//
-./mach run                                //Floorp を実行//
-```
-```
-//インストーラー化//
-./mach package
+./mach build installers-en-US
+
+./mach build
+
 ```
 
-Windows であれば、セットアップ用の exe が 
+これで完了です。パッチを作成してソースコードを以下の方法で送り付けましょう！
 
-`"C:\mozilla-source\mozilla-unified\obj-x86_64-pc-mingw32\dist\install\sea\firefox-95.0a1.en-us.win64.installer.exe"`
+---
 
- に
+## Floorp 向けに書いたパッチを寄稿するには
 
-Linux であれば、tar .bz ファイルが
+<strong>重要：テスト・ベータ版用のパッチを寄稿する際には、絶対 `release` にプッシュしないで下さい</strong>
 
- `..\mozilla-unified\obj-x86_64-pc-gnu-linux\dist\install\sea\firefox-95.0a1.en-us.win64.tar.bz`
+まず最初に、<a href="https://github.com/floorp-projects/floorp">Floorp</a> をクローンします。
 
-に生成される。
+```
+git clone https://github.com/floorp-projects/floorp.git
+```
 
-----
+その後、ブランチが`beta`であることを確認してください。`release` や `master` は使用しません。
 
-## ビルド時に上手く行かなかったら
+```
+git branch
+```
 
-issue は建ててもいいですが、開発者は対応しないかもしれません（忙しいため）
+Floorp のソースコードを改造しましょう！以下は Floorp のソースコード形態についてのドキュメントです。
 
-その前に試してほしいことは以下の通りです。
+Floorp はアドオン・UI 部分・アドオンの実装部分・その他の Firefox の実装部分を改造して作成されています。改変場所についての解説です。ちなみに Firefox はよくソースコードの構造変えたがるのであてにならない場合あることに注意。
 
-・コマンドプロンプトの再起動
+```
 
-・./mach clobberの実行(ビルドファイルのクリーンアップ)
+browser/branding
+Floorp のブランディング。このソースコードは MPL2.0 でライセンスされていないので、認めていないリリースの場合での使用は認められません。
 
-・変更した部分の書き戻し
+browser/extensions
+組み込みのシステムアドオンが入っています。Floorp アップデーター等もここにあります。
+
+browser/locales
+en-US のローカライズが入っています。上記の通り、その他の言語は別にあります。preferences サイト等の改変時にはここの改変も必要です。
+
+browser/themes
+Floorp ブラウザの外観のソースコードが含まれています。ソースコードは Materiafox に基づきますが、browser.shared.css や tab.css などにソースコードが分けられています。
+
+toolkit/modules
+GTKテーマの実装等 etc...
+
+toolkit/themes
+ブラウザー内部サイトのデザインの実装。about:support から about:config まで結構グローバル。
+
+toolkit/mozapps/extensions/default-theme
+システムテーマの実装。
+
+```
