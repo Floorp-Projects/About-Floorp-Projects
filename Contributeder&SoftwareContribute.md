@@ -1,7 +1,7 @@
-## Contributeders
-1.surapunoyousei︰The main developer. Originally created by this person. responsible for Twitter.
+## Contributors
+1.surapunoyousei︰The main developer. Originally created by this person. Responsible for Twitter.
 
-2.omochi no kerohira︰he is mainly in charge of the parts that the Surapu fairies don't understand. She is the powerhouse behind the scenes.
+2.omochi no kerohira︰He is mainly in charge of the parts that the Surapu fairies don't understand. He is the powerhouse behind the scenes.
 
 3.kr-tukimi︰Site, support site creator & support site operator
 
@@ -13,7 +13,7 @@
 
 7.Typling︰The person who fixed the bug in Floorp for Linux.
 
-8.Cutter：Floorp Legayc icon creator
+8.Cutter：Floorp Legacy icon creator
 
 9.honokano：Various types of support
 
