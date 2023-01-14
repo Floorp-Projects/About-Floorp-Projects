@@ -3,7 +3,7 @@
 
 2.omochi no kerohira︰He is mainly in charge of the parts that the Surapu fairies don't understand. He is the powerhouse behind the scenes.
 
-3.kr-tukimi︰Site, support site creator & support site operator
+3.tukimi︰Site, support site creator & support site operator
 
 4.sharp-neko︰Server provider. God
 
@@ -36,7 +36,7 @@
 
 7.Translate web page (https://github.com/FilipePS/Traduzir-paginas-web)
 
-8. Google Material icons (https://fonts.google.com/icons) 
+8. Google Material icons (https://fonts.google.com/icons)
 
 9. tabcnterrebon
 
