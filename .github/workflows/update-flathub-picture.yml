@@ -10,30 +10,23 @@ jobs:
     - uses: actions/checkout@v3
     - name: Screenshots
       run: |
-        echo "::add-mask::${{ secrets.KEYMASK }}"
-        echo "${{ secrets.GPG_SEC }}" > Floorp_sec.asc
-        gpg --import Floorp_sec.asc
         curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
         sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'
         sudo apt update
         sudo apt install imagemagick floorp openbox obconf xorg gpg
         Xvfb :2 -screen 0 1920x1080x24 &
         export DISPLAY=:2
-        sleep 5
+        sleep 10
         /usr/bin/openbox-session &
-        sleep 5
+        sleep 10
         floorp -foreground -height 1080 -width 1920 &
-        sleep 5
+        sleep 10
         pkill floorp
         floorp -foreground about:newtab &
         sleep 10
         import -window root -crop 1920x1080+0+0 $(pwd)/flathub-screenshot.png
-        rm Floorp_sec.asc
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --global gpg.program gpg
-        git config --global user.signingkey ${{ secrets.GPG_SSB }}
-        git config --global commit.gpgsign true
         git add .
         git commit -m "[FB] Floorp | Update Flathub Picture"
         git push origin
