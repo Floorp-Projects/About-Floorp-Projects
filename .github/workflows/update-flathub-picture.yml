@@ -1,0 +1,31 @@
+name: Update Flathub Screenshot
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Screenshots
+      run: |
+        curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
+        sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list 'https://ppa.ablaze.one/Floorp.list'
+        sudo apt update
+        sudo apt install imagemagick floorp openbox obconf xorg
+        Xvfb :2 -screen 0 1920x1080x24 &
+        export DISPLAY=:2
+        sleep 5
+        /usr/bin/openbox-session &
+        sleep 5
+        floorp -foreground -height 1080 -width 1920 &
+        sleep 5
+        pkill floorp
+        floorp -foreground about:newtab &
+        sleep 10
+        import -window root -crop 1920x1080+0+0 $(pwd)/floorp.png
+    - name: Upload
+      uses: actions/upload-artifact@v1
+      with:
+        name: screenshot
+        path: floorp.png
