@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
+    - uses: actions/checkout@v3
     - name: Screenshots
       run: |
         curl -fsSL https://ppa.ablaze.one/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
@@ -23,9 +24,9 @@ jobs:
         pkill floorp
         floorp -foreground about:newtab &
         sleep 10
-        import -window root -crop 1920x1080+0+0 $(pwd)/floorp.png
-    - name: Upload
-      uses: actions/upload-artifact@v1
-      with:
-        name: screenshot
-        path: floorp.png
+        import -window root -crop 1920x1080+0+0 $(pwd)/flathub-screenshot.png
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "[FB] Floorp | Update Flathub Picture"
+        git push origin
