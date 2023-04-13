@@ -35,6 +35,6 @@ Floorpブラウザに関するリンクはこちら：
 
 💻 <strong><a href="https://github.com/Floorp-Projects/Floorp">ブラウザーのソースコード</a></strong>
 
-📘 <strong><a href="https://blog.ablaze.one">リリースノート＆ブログ</a></strong>
+📘 <strong><a href="https://blog.ablaze.one/category/ablaze/ablaze-project/floorp/">リリースノート＆ブログ</a></strong>
 
 ❓<strong><a href="https://support.ablaze.one">サポートサイト</a></strong>
