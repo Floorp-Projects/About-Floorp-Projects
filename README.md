@@ -1,4 +1,5 @@
 ## 👋 Floorpプロジェクトのリポジトリへようこそ
+<div style="text-align: right;"><a href="https://github.com/Floorp-Projects/.github/blob/main/profile/README.md">English translation</a></div>
 
 ![header](https://raw.githubusercontent.com/Floorp-Projects/.github/main/profile/header.png)
 
