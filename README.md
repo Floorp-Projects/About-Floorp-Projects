@@ -15,13 +15,13 @@ Firefox ベースながらも全く違うエクスペリエンスをお届けし
 
 開発中のプロジェクト：
 
-・<strong><a href="https://floorp.ablaze.one"> Floorp ブラウザー</a></strong><br>ユーザーを第一に考え、プライバシーを尊重する、Firefoxベースのブラウザーです。皆様から頂くフィードバックの大半は次のアップデートに適用されます。
+・<strong><a href="https://floorp.app"> Floorp ブラウザー</a></strong><br>ユーザーを第一に考え、プライバシーを尊重する、Firefoxベースのブラウザーです。皆様から頂くフィードバックの大半は次のアップデートに適用されます。
 <br>
 ### ☕ Floorpプロジェクトに貢献する
 
 より良いウェブの構築を目指しましょう。貢献する方法は以下のとおりです：
 
-・最も簡単な方法は、Floorpブラウザをダウンロードしてご利用いただくことです。 Floorpブラウザのダウンロードは<strong><a href="https://floorp.ablaze.one">こちら</a></strong>
+・最も簡単な方法は、Floorpブラウザをダウンロードしてご利用いただくことです。 Floorpブラウザのダウンロードは<strong><a href="https://floorp.app">こちら</a></strong>
 
 ・寄付も可能です！健全なウェブの世界を作りましょう！寄付をするには、<strong><a href="https://support.ablaze.one/contact">Ablazeサポート</a></strong>までご連絡ください。
 
@@ -31,7 +31,7 @@ Firefox ベースながらも全く違うエクスペリエンスをお届けし
 
 Floorpブラウザに関するリンクはこちら：
 
-💿 <strong><a href="https://floorp.ablaze.one">公式サイト</a></strong>
+💿 <strong><a href="https://floorp.app">公式サイト</a></strong>
 
 💻 <strong><a href="https://github.com/Floorp-Projects/Floorp">ブラウザーのソースコード</a></strong>
 
