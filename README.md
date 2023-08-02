@@ -23,7 +23,7 @@ Firefox ベースながらも全く違うエクスペリエンスをお届けし
 
 ・最も簡単な方法は、Floorpブラウザをダウンロードしてご利用いただくことです。 Floorpブラウザのダウンロードは<strong><a href="https://floorp.app">こちら</a></strong>
 
-・寄付も可能です！健全なウェブの世界を作りましょう！寄付をするには、<strong><a href="https://support.ablaze.one/contact">Ablazeサポート</a></strong>までご連絡ください。
+・寄付も可能です！健全なウェブの世界を作りましょう！寄付をするには、<strong><a href="https://github.com/sponsors/Ablaze-MIRAI">GitHub Sponsors</a></strong>をご確認ください。
 
 ・ブログやTwitterで紹介する方法もあります。ぜひこのブラウザーを広めてください！ブログを書いていただければ喜んで開発陣も見に行きます！
 
