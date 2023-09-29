@@ -18,11 +18,13 @@ jobs:
         export DISPLAY=:2
         sleep 10
         /usr/bin/openbox-session &
+        mkdir ~/floorp-profile
+        cp -f $(pwd)/workflow-files/prefs.js ~/floorp-profile/user.js
         sleep 10
-        floorp -foreground -height 1080 -width 1920 &
+        floorp -foreground -height 1080 -width 1920 --profile ~/floorp-profile &
         sleep 10
         pkill floorp
-        floorp -foreground about:newtab &
+        floorp -foreground about:newtab --profile ~/floorp-profile &
         sleep 10
         import -window root -crop 1920x1080+0+0 $(pwd)/flathub-screenshot.png
         git config --global user.name "github-actions[bot]"
