@@ -19,7 +19,7 @@ jobs:
         sleep 10
         /usr/bin/openbox-session &
         sleep 10
-        floorp -foreground -height 1080 -width 1920 &
+        floorp -foreground -height 1080 -width 1920 -setDefaultBrowser &
         sleep 10
         pkill floorp
         floorp -foreground about:newtab &
