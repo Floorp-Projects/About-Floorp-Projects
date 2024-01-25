@@ -1,2 +1,2 @@
 workflow-files/*
-workflow-files/user.js
+!workflow-files/user.js
