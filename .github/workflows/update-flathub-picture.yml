@@ -32,12 +32,13 @@ jobs:
         import -window root -crop 1920x1080+0+0 $(pwd)/flathub-screenshot-white2.png
         sleep 10
         pkill floorp
-        floorp -foreground about:newtab --profile $(pwd)/workflow-files -height 1080 -width 1920 &
+        cp -f $(pwd)/workflow-files/user.js ~/.floorp/*.default-release/user.js
+        floorp -foreground about:newtab -height 1080 -width 1920 &
         sleep 10
         import -window root -crop 1920x1080+0+0 $(pwd)/flathub-screenshot-black1.png
         sleep 10
         pkill floorp
-        floorp -foreground about:newtab -url https://floorp.app/ --profile $(pwd)/workflow-files -height 1080 -width 1920 &
+        floorp -foreground about:newtab -url https://floorp.app/ -height 1080 -width 1920 &
         sleep 10
         import -window root -crop 1920x1080+0+0 $(pwd)/flathub-screenshot-black2.png
         git config --global user.name "github-actions[bot]"
