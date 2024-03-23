@@ -1,54 +1,61 @@
-## Floorp ブラウザ 利用規約
+Last updated: 2024-03-23
 
-Floorp ブラウザ 利用規約
+## LICENSE AGREEMENT
 
-### FloorpはMozillaが開発するFirefoxをベースに沢山のボランティアによって支えられています。ボランティアの方、Mozilla の開発者、Floorpを選んでくださった方に感謝します。
+This License Agreement (“Agreement”) is a legal agreement between you and the Licensor. The Agreement provides a license to use the Software and contains warranty information and liability disclaimers. By downloading, installing, or using the Software, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this Agreement. If you do not agree to be bound by these terms, then do not download, install, or use the Software.
 
+### 1. Definitions
 
+1.1. “Licensor” means the owner of the Software (Floorp Projects & Ablaze), which is the entity that offers the Software under the terms of this Agreement.
 
-#### 1.ソースコード
+1.2. “Software” means the software program that you are downloading, installing, or using, including all files and documentation provided with the Software.
 
-　Floorpは、Mozilla Public License 2.0 (以後 MPL2.0) の条件の下で利用可能になります。これは、Floorpを使用、コピー、および他の人に配布できることを意味します。ニーズに合わせて、Floorpのソースコードを変更することもできます。Mozilla Public License 2.0は、変更されたバージョンを配布する権利も与えまられます。また、利用したオープンソースソフトウェアは GitHub から確認することができます
+1.3. “You” means the individual or entity that is agreeing to be bound by this Agreement.
 
-#### 2.アイコンの著作権と使用権
- 
-Floorp の名前やロゴはMPL2.0ではライセンスされていません。また、Floorpはオープンソースソフトウェアですが、Floorp を改造せずにアイコンのみ変更して再配布するすることは認めていません。悪用も禁じます。また、ブラウザ管理、セキュリティー的な問題からFloorp 公式の許可がなくLinuxなどのOS等に本製品をプリインストールすることも禁止します。
+### 2. License Grant
 
-#### 3.プライバシー
+2.1. Subject to the terms of this Agreement, the Licensor grants you a limited, non-exclusive, non-transferable, non-sublicensable license to use the Software for your personal or commercial use.
 
-　Floorpを通じて送信されたあなたの個人情報とフィードバックの使用方法は、Ablazeプライバシーポリシーに記載されており、これが適用されます。
+2.2. You may not distribute, sell, rent, lease, sublicense, or otherwise transfer the Software to any third party.
 
-#### 4.あなたの個人情報の取り扱いについて
+2.3. You may not modify, adapt, translate, reverse engineer, decompile, or disassemble the Software.
 
-Floorp ではあなたの個人情報を最小限のみ収集することを努力しています。
-一部のFloorpブラウザの機能はあなたの個人情報を利用します。Floorp開発者側はあなたの個人情報をプライバシーポリシーに記載されている以外では調査しません。具体的には、フィードバック、Ablaze サポートサービス、Ablaze サイトへのアクセス時に匿名の形で利用する場合があります。これは利用規約の改定、プライバシポリシーの改定によって変更されることがあります。また、ブラウザの機能向上のために Floorp は他の第三者の検索エンジンサービス（Google、Bing、Startpage 等）や、Firefox 提供元のMozilla にブラウザに入力した情報を送信します。これらは第三者のプライバシーポリシーによって処理されます。Ablaze のプライバシーポリシーは https://ablaze.one/privacy_policy です
+2.4. You may not remove or alter any copyright, trademark, or other proprietary rights notices from the Software.
 
-例：検索バーに入力したワード・ウェブサイトからの通知を送信するためにMozillaのサーバに接続する。
+2.5. Floorp is not completely open-source same. Floorp's a part of codes are protected by copyright law and is not licensed under an open-source license. You may not use part of Floorp's code in your own projects without permission from the Licensor.
 
-#### 5.Floorpの提供方法、サポート終了について
-以下は Floorpの利用に関しての規約です。
+2.6. If MPL2.0 or any other open-source license notation is present in the file, the file is available as open source.
 
-・機能の正確性
-Floorpとその開発者、ライセンサー、およびパートナーは、正確で最新のサービスを提供するために開発を進めています。ただし、この情報が包括的でエラーがないことを保証することはできません。たとえば、セーフブラウジングサービスは一部の危険なサイトを特定せず、一部の安全なサイトを誤って特定する場合があります。また、サービスプロバイダーから返されるすべての場所は推定値であり、当社もサービスプロバイダーも提供された場所の正確性を保証しません。
+### 3. Warranty Disclaimer
 
-Floorp は、その裁量によりサービスを中止または変更する場合があります。
+3.1. The Software is provided “as is” without any warranty of any kind. The Licensor makes no warranties, express or implied, with respect to the Software, including but not limited to any implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
 
-#### ・Floorp ブラウザのサービスについて
-サードパーティーのサービスとFloorpを一緒に使用することを歓迎し、Floorpはその権利を付与します。Floorpとそのライセンサーは、本サービスにおけるその他すべての権利を留保します。これらの条件は、Floorpおよび対応するFloorpのソースコードバージョンに適用されるオープンソースライセンスの下で付与される権利を制限することを意図したものではありません。 
+3.2. The Licensor does not warrant that the Software will be error-free or that the Software will meet your requirements.
 
-・本サービスは「現状有姿」で提供されます。Floorp、その寄稿者、ライセンサー、およびディストリビューターは、明示または黙示を問わず、本サービスが商品性を有し、お客様の特定の目的に適合することを含むがこれに限定されない、すべての保証を否認します。これは、Mozilla Public Licenseで明記されています。お客様は、お客様の目的のためにサービスを選択すること、およびサービスの品質とパフォーマンスに関して、すべてのリスクを負います。一部の法域では、黙示の保証の除外または制限が許可されていないため、この免責事項がお客様に適用されない場合があります。 
+3.3. The Licensor does not warrant that the Software will be compatible with any other software or hardware.
 
-・Floorpは、必要に応じてこれらの条件をユーザの同意なしに随時更新する場合があります。これらの条件は、
-Floorpの書面による同意なしに変更またはキャンセルすることはできません。
-1つ以上のサービスを使用したくない場合、または上記の条件が受け入れられない場合は、機能またはサービスを無効にしてください。アンインストールまたはFloorpを利用することはできません。
+### 4. Limitation of Liability
 
-#### この規約の有効性について
-この利用規約は見たか見ないかにかかわらず、Floorp 製品群、Floorp ブラウザを利用すると本規約に同意したとみなします。ブラウザであれば、about:welcome のサイトから、ライセンスを見ることができます。
+4.1. In no event shall the Licensor be liable for any damages, including but not limited to direct, indirect, special, incidental, or consequential damages or other pecuniary loss, arising out of the use of or inability to use the Software.
 
-#### Floorp はウェブでのユーザを追跡しませんが、インストール時の状態、ユーザ数の確認のために完全に匿名で第三者に絶対に渡すことのない形で数字だけ情報を受け取ることがあります。
+4.2. The Licensor shall not be liable for any loss of data, loss of profits, loss of business, or any other financial loss arising out of the use of or inability to use the Software.
 
+### 5. Data Collection
 
-## あなたの権利
+5.1. Software collect the minimum data necessary for development. Software do not sell or provide your data to third parties. IP addresses are collected to count updates, but no other information is collected.
 
-Floorp プロジェクトが提供するソースコードはサードパーティーによるコード以外は基本 MPL2.0 でライセンスされています。これにより、あなたは Floorp を使用、複製、配布することができます。あなたはまた、Firefox のソースコードを必要に応じて修正することもできます。Mozilla Public License では、あなたが修正したバージョンを配布することも認めています。
+### 6. Termination
 
+6.1. This Agreement is effective until terminated. You may terminate this Agreement at any time by destroying all copies of the Software.
+
+6.2. This Agreement will terminate automatically if you fail to comply with any of the terms of this Agreement.
+
+6.3. Upon termination of this Agreement, you must destroy all copies of the Software.
+
+### 7. Governing Law
+
+7.1. 7.1. This Agreement shall be governed by and construed in accordance with the laws of the government of Japan.
+
+### 8. Update to the Agreement
+
+8.1. The Licensor reserves the right to update this Agreement at any time. The updated Agreement will be effective immediately upon posting to the Licensor’s website.
