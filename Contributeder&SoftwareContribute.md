@@ -1,3 +1,5 @@
+**This file has not been updated for a long time. For information about the open-source software used by Floorp Browser, please refer to [this page](https://github.com/Floorp-Projects/Floorp#-floorp-license-notices-).**
+
 ## Contributors
 1.surapunoyousei︰The main developer. Originally created by this person. Responsible for Twitter.
 

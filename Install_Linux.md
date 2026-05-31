@@ -1,3 +1,5 @@
+**このドキュメントは長らく更新されていません。Floorp のインストール方法については[こちら](https://docs.floorp.app/ja/docs/installation)をご確認ください。**
+
 ## Floorp for Linux のインストールはこちら。
 **ターミナル（端末）に貼り付けてください。**
 

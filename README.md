@@ -1,40 +1,43 @@
-## 👋 Floorpプロジェクトのリポジトリへようこそ
-<div style="text-align: right;"><a href="https://github.com/Floorp-Projects/.github/blob/main/profile/README.md">English translation</a></div>
+## 👋 Floorp プロジェクトのリポジトリへようこそ！
+
+[English translation](https://github.com/Floorp-Projects/.github/blob/main/profile/README.md")
 
 ![header](https://raw.githubusercontent.com/Floorp-Projects/.github/main/profile/header.png)
 
+## 💫 Floorp プロジェクトとは？
 
+**「Floorp は、柔軟性、プライバシー、ウェブの公開性のバランスを追求するブラウザーです。」**
 
-## 💫 Floorpプロジェクトとは？
-<strong>「Floorpプロジェクトは、プライバシーを追求し、匿名性とウェブの公開性のバランスを追求するプロジェクトです。」</strong>
+Firefox をベースとして、高度なカスタマイズ性と多数の実験的な機能を提供しています。
 
-Firefox ベースながらも全く違うエクスペリエンスをお届けします。Floorp はカスタマイズ性を優先したブラウザーです。
-<br>
 ---
+
 ### 🔨 プロジェクト
 
-開発中のプロジェクト：
+開発中のプロジェクト:
 
-・<strong><a href="https://floorp.app"> Floorp ブラウザー</a></strong><br>ユーザーを第一に考え、プライバシーを尊重する、Firefoxベースのブラウザーです。皆様から頂くフィードバックの大半は次のアップデートに適用されます。
-<br>
+- [**Floorp ブラウザー**](https://floorp.app) - ユーザーを第一に考え、プライバシーを尊重する、Firefox ベースのブラウザーです。皆様からいただくフィードバックは次のアップデートに活かされます。
+
 ### ☕ Floorpプロジェクトに貢献する
 
-より良いウェブの構築を目指しましょう。貢献する方法は以下のとおりです：
+より良いウェブの構築を目指しましょう。貢献する方法は方法はたくさんあります:
 
-・最も簡単な方法は、Floorpブラウザをダウンロードしてご利用いただくことです。 Floorpブラウザのダウンロードは<strong><a href="https://floorp.app">こちら</a></strong>
+- 最も簡単な方法は、Floorp ブラウザーをダウンロードしてご利用いただくことです。 Floorp ブラウザーのダウンロードは[**こちら**](https://floorp.app)
 
-・寄付も可能です！健全なウェブの世界を作りましょう！寄付をするには、<strong><a href="https://github.com/sponsors/Ablaze-MIRAI">GitHub Sponsors</a></strong>をご確認ください。
+- 寄付も可能です！健全なウェブの世界を作りましょう！ [**GitHub Sponsors**](https://github.com/sponsors/Ryosuke-Asano) をご確認ください。
 
-・ブログやTwitterで紹介する方法もあります。ぜひこのブラウザーを広めてください！ブログを書いていただければ喜んで開発陣も見に行きます！
+詳しくは[**こちら**](https://docs.floorp.app/ja/docs/contributing/floorp)のドキュメントをご確認ください。
 
 ### 👐 各種リンク
 
-Floorpブラウザに関するリンクはこちら：
+公式サイトとソースコード:
 
-💿 <strong><a href="https://floorp.app">公式サイト</a></strong>
+💿 [**公式サイト**](https://floorp.app)
 
-💻 <strong><a href="https://github.com/Floorp-Projects/Floorp">ブラウザーのソースコード</a></strong>
+💻 [**ブラウザーのソースコード**](https://github.com/Floorp-Projects/Floorp)
 
-📘 <strong><a href="https://blog.ablaze.one/category/ablaze/ablaze-project/floorp/">リリースノート＆ブログ</a></strong>
+📘 [**リリースノートとブログ**](https://blog.floorp.app)
 
-❓<strong><a href="https://support.ablaze.one">サポートサイト</a></strong>
+💬 [**公式 Discord コミュニティ**](https://discord.floorp.app)
+
+💬 [**ドキュメント**](https://docs.floorp.app)
